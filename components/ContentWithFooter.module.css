@@ -1,0 +1,99 @@
+.bufferedContentContainer {
+    position: relative;
+}
+
+.mainContent {
+    width: 100%;
+}
+
+.contentContainer {
+    display: flex;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.94);
+    min-height: 100vh;
+    z-index: 100;
+    position: relative;
+}
+
+.footerTransition {
+    width: 100%;
+    height: 70vh;
+    background: rgb(0, 0, 0, 0.94);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.20) 75%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    z-index: 99;
+}
+
+.footerBuffer {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+}
+
+.footer {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.footerStack {
+    width: 100%;
+    height: 100%;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+}
+
+.indexNav {
+    width: 90%;
+    position: relative;
+    z-index: 4;
+    justify-content: center;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.navLinks {
+    display: unset;
+    width: auto;
+}
+
+.navLink {
+    font-weight: 200;
+    color: rgb(220, 206, 183);
+    font-size: 2.4375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-right: 4rem;
+    display: inline-block;
+    transition: color .15s;
+    line-height: 3.75rem;
+}
+
+.navLink:hover {
+    color: white;
+    transition: color .15s;
+}
+
+.navLink:last-child {
+    margin-right: 0;
+}
+
