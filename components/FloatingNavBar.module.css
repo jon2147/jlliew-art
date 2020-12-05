@@ -24,8 +24,15 @@
 }
 
 .homeLink {
+    color: rgb(220, 206, 183);
+    transition: color .15s;
 
     text-transform: uppercase;
     letter-spacing: .3em;
     font-weight: 200;
+}
+
+.homeLink:hover {
+    color: white;
+    transition: color .15s;
 }
