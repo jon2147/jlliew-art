@@ -1,6 +1,11 @@
-import styles from './ContentWithFooter.module.css'
+import styles from './ContentWithFooter.module.css';
+import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 export default function ContentWithFooter({ children }) {
+
+    const router = useRouter();
+
     return (
         <div className={styles.footerStack}>
             <div className={styles.bufferedContentContainer}>
@@ -15,10 +20,18 @@ export default function ContentWithFooter({ children }) {
                 {/* This would be a good place to have a different component for the footer */}
                 <div className={styles.indexNav}>
                     <div className={styles.navLinks}>
-                        <span class={styles.navLink}>Work</span>
-                        <span class={styles.navLink}>Personal</span>
-                        <span class={styles.navLink}>Sketchbook</span>
-                        <span class={styles.navLink}>About</span>
+                        <Link href="/work">
+                            <a className={router.query === "/work" ? styles.navLinkActive : styles.navLink}>Work</a>
+                        </Link>
+                        <Link href="/personal">
+                            <a className={router.pathname === "/personal" ? styles.navLinkActive : styles.navLink}>Personal</a>
+                        </Link>
+                        <Link href="/sketchbook">
+                            <a className={router.pathname === "/sketchbook" ? styles.navLinkActive : styles.navLink}>Sketchbook</a>
+                        </Link>
+                        <Link href="/about">
+                            <a className={router.pathname === "/about" ? styles.navLinkActive : styles.navLink}>About</a>
+                        </Link>
                     </div>
                 </div>
             </footer>

@@ -1,0 +1,31 @@
+.bar {
+    width: 100%;
+    height: 48px;
+    color: rgb(220, 206, 183);
+    position: fixed;
+    padding: 2rem;
+
+    top: 0;
+    left: 0;
+
+    z-index: 11;
+
+    display: flex;
+
+    flex-direction: row;
+}
+
+.menuIcon {
+    color: rgb(220, 206, 183);
+    font-size: 1.5rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    margin-right: 5rem;
+}
+
+.homeLink {
+
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: 200;
+}

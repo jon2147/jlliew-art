@@ -11,7 +11,7 @@
     width: 100%;
     background: rgb(0, 0, 0, 0.94);
     min-height: 100vh;
-    z-index: 100;
+    z-index: 10;
     position: relative;
 }
 
@@ -21,7 +21,7 @@
     background: rgb(0, 0, 0, 0.94);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.20) 75%, rgba(0, 0, 0, 0) 100%);
     position: relative;
-    z-index: 99;
+    z-index: 9;
 }
 
 .footerBuffer {
@@ -50,6 +50,14 @@
     object-fit: cover;
     position: fixed;
     z-index: -1;
+    opacity: 1;
+    transition: visibility 0s, ease 0.38s, opacity 0.38s ease;
+}
+
+.footerImageHidden{
+    composes: footerImage;
+    opacity: 0;
+    transition: visibility 0s, ease 0.3s, opacity 0.3s ease;
 }
 
 .footerStack {
@@ -79,13 +87,18 @@
 .navLink {
     font-weight: 200;
     color: rgb(220, 206, 183);
-    font-size: 2.4375rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 0.4em;
-    margin-right: 4rem;
+    letter-spacing: 0.3em;
+    margin-right: 4.125rem;
     display: inline-block;
     transition: color .15s;
-    line-height: 3.75rem;
+    line-height: 3.25rem;
+}
+
+.navLinkActive{
+    composes: navLink;
+    color: white;
 }
 
 .navLink:hover {
