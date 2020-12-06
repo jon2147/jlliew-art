@@ -3,7 +3,6 @@ import styles from './PlaceholderContent.module.css'
 export default function PlaceholderContent({ children }) {
     return (
         <>
-            <img src="/images/mrossary.svg" className={styles.logo} />
 
             <h1 className={styles.h1}>Denne side er under opførelse.</h1>
             <section className={styles.section}>

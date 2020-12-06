@@ -1,26 +1,30 @@
-export const sectionData = [
-    {
+export const sectionsData = {
+    work: {
         order: 0,
-        name: "Work",
+        id: "work",
+        title: "Work",
         image: "/images/meduso_bg.jpg",
         description: ""
     },
-    {
-        order: 1,
-        name: "Personal",
+    personal: {
+        order: 2,
+        id: "personal",
+        title: "Personal",
         image: "/images/wtsr_bg.jpg",
         description: ""
     },
-    {
-        order: 2,
-        name: "Sketchbook",
-        image: "/images/morpheus_bg.jpg",
+    sketchbook: {
+        order: 1,
+        id: "sketchbook",
+        title: "Sketchbook",
+        image: "/images/bed_bg.jpg",
         description: ""
     },
-    {
+    about: {
         order: 3,
-        name: "About",
+        id: "about",
+        title: "About",
         image: "/images/morpheus_bg.jpg",
         description: ""
-    },
-]
+    }
+}

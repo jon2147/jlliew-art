@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <ContentWithFooter>
-        <PlaceholderContent/>
+        <PlaceholderContent/> {/* This is where index content would go, presuming it would be contained in contentwithfooter - which it really shouldnt */}
       </ContentWithFooter>
     </div>
   )
