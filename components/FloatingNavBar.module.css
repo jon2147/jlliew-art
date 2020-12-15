@@ -35,6 +35,10 @@
     transition: color .15s;
 }
 
+.barLinkActive {
+    composes:barLink;
+    color: white;
+}
 .barLink:last-child {
     margin-right: 0;
 }
@@ -67,4 +71,20 @@
 .right {
     composes: left;
     justify-content: flex-start;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        display: none;
+    }
+
+    .bar {
+        flex-direction: column;
+    }
+
+    .barLink {
+        font-size: 0.7rem;
+        margin-right: 3rem;
+    }
 }

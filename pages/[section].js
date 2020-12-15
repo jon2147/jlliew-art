@@ -4,6 +4,9 @@ import Link from 'next/link'
 import Head from 'next/head'
 import FloatingNavBar from '../components/FloatingNavBar';
 import IndexFooter from '../components/IndexFooter';
+import SectionBackground from '../components/SectionBackground'
+import FadedContent from '../components/FadedContent'
+
 import ContentWithFooter from '../components/ContentWithFooter';
 
 import { sectionsData } from '../sections/sections'
@@ -18,8 +21,6 @@ export async function getStaticPaths() {
         }
     })
 
-    console.log(paths)
-
     return {
         paths, fallback: false
     }
@@ -33,12 +34,17 @@ export async function getStaticProps({ params }) {
     }
 }
 
-export default function Section({ section }) {
-    console.log(section)
+export default function Section({ section }) {   
+
     return <>
+
         <Head>
             <title>{section.title + " - Jonathan Liew"}</title>
         </Head>
-        <ContentWithFooter></ContentWithFooter>
+        <div className={styles.bufferedContentContainer}>
+            <FloatingNavBar />
+            <FadedContent />
+            <SectionBackground background={section.image} />
+        </div>
     </>
 }

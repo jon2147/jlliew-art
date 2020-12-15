@@ -9,7 +9,7 @@
 .contentContainer {
     display: flex;
     width: 100%;
-    background: rgb(0, 0, 0, 0.94);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 1) 88%, rgba(0, 0, 0, 0) 100%);
     min-height: 100vh;
     z-index: 10;
     position: relative;
@@ -43,6 +43,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    pointer-events: none;
 }
 
 .footerImage {
@@ -55,10 +56,22 @@
     transition: visibility 0s, ease 0.38s, opacity 0.38s ease;
 }
 
-.footerImageHidden{
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    opacity: 1;
+    transition: visibility 0s, ease 0.38s, opacity 0.38s ease;
+
+}
+
+.footerImageHidden {
     composes: footerImage;
     opacity: 0;
     transition: visibility 0s, ease 0.3s, opacity 0.3s ease;
+    
 }
 
 .footerStack {
@@ -78,6 +91,8 @@
     justify-content: center;
     display: flex;
     padding: 0 2rem;
+    pointer-events: all;
+
 }
 
 .navLinks {
@@ -97,7 +112,7 @@
     line-height: 3.25rem;
 }
 
-.navLinkActive{
+.navLinkActive {
     composes: navLink;
     color: white;
 }
@@ -111,3 +126,43 @@
     margin-right: 0;
 }
 
+.sectionBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background: black;
+}
+
+
+.fadedContentContainer {
+    width: 100%;
+    height: 100vh;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0,1) 10%, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 1) 88%, rgba(0, 0, 0, 0) 100%);
+    
+    
+}
+
+.fadedContent::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.fadedContent {
+    
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+@media only screen and (max-width: 900px) {
+    .footerImage {
+        display: none;
+    }
+
+}

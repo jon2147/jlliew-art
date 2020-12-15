@@ -1,5 +1,6 @@
 import styles from './PlaceholderContent.module.css'
 
+
 export default function PlaceholderContent({ children }) {
     return (
         <>

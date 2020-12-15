@@ -1,3 +1,34 @@
+export const leftSections = [
+    {
+        title: "Work",
+        url: "/work"
+    },
+    {
+        title: "Sketchbook",
+        url: "/sketchbook"
+    },
+    {
+        title: "Personal",
+        url: "/personal"
+    }
+]
+
+export const rightSections = [
+    {
+        title: "About",
+        url: "/about"
+    },
+    {
+        title: "Contact",
+        url: "/contact"
+    },
+    {
+        title: "Design",
+        url: "https://jlliew.com",
+        isExternal: true
+    }
+]
+
 export const sectionsData = {
     work: {
         order: 0,
