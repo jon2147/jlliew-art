@@ -6,6 +6,7 @@ import FloatingNavBar from '../components/FloatingNavBar'
 import FadedContent from '../components/FadedContent'
 import SectionBackground from '../components/SectionBackground'
 import IndexNavigation from '../components/IndexNavigation'
+import Homepage from '../components/Homepage'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <IndexNavigation />
-      <SectionBackground />
+      <Homepage/>
     </div>
   )
 }

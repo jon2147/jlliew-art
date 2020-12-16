@@ -43,8 +43,7 @@ export default function Section({ section }) {
             <title>{section.title + " - Jonathan Liew"}</title>
         </Head>
         <div className={styles.bufferedContentContainer}>
-            <IndexNavigation />
-            <SectionBackground background={section.image} />
+            <IndexNavigation background={section.image}/>
         </div>
     </>
 }

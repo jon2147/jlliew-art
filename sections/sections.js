@@ -32,7 +32,7 @@ export const sectionsData = {
         order: 0,
         id: "work",
         title: "Work",
-        image: "/images/meduso_bg.jpg",
+        image: "/images/temp.png",
         description: ""
     },
     personal: {
@@ -54,6 +54,13 @@ export const sectionsData = {
         id: "about",
         title: "About",
         image: "/images/morpheus_bg.jpg",
+        description: ""
+    },
+    contact: {
+        order: 4,
+        id: "contact",
+        title: "Contact",
+        image: "/images/meduso_bg.jpg",
         description: ""
     }
 }
