@@ -1,7 +1,6 @@
 import styles from './ContentWithFooter.module.css';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-
 import { sectionsData } from '../sections/sections'
 
 export default function SectionBackground({ background }) {

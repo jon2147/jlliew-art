@@ -10,6 +10,7 @@ import FadedContent from '../components/FadedContent'
 import ContentWithFooter from '../components/ContentWithFooter';
 
 import { sectionsData } from '../sections/sections'
+import IndexNavigation from '../components/IndexNavigation';
 
 export async function getStaticPaths() {
 
@@ -42,8 +43,7 @@ export default function Section({ section }) {
             <title>{section.title + " - Jonathan Liew"}</title>
         </Head>
         <div className={styles.bufferedContentContainer}>
-            <FloatingNavBar />
-            <FadedContent />
+            <IndexNavigation />
             <SectionBackground background={section.image} />
         </div>
     </>

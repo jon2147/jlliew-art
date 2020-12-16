@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import FloatingNavBar from '../components/FloatingNavBar'
 import FadedContent from '../components/FadedContent'
 import SectionBackground from '../components/SectionBackground'
+import IndexNavigation from '../components/IndexNavigation'
 
 export default function Home() {
   return (
@@ -14,11 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.bufferedContentContainer}>
-        <FloatingNavBar />
-        <FadedContent />
-        <SectionBackground />
-      </div>
+      <IndexNavigation />
+      <SectionBackground />
     </div>
   )
 }
