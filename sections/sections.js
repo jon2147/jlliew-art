@@ -2,23 +2,28 @@
 export const indexSections = [
     {
         title: "Work",
-        url: "/work"
+        url: "/work",
+        imageURL: "/images/temp.png"
     },
     {
         title: "Sketchbook",
-        url: "/sketchbook"
+        url: "/sketchbook",
+        imageURL: "/images/bed_bg.jpg"
     },
     {
         title: "Personal",
-        url: "/personal"
+        url: "/personal",
+        imageURL: "/images/wtsr_bg.jpg"
     },
     {
         title: "About",
-        url: "/about"
+        url: "/about",
+        imageURL: "/images/morpheus_bg.jpg"
     },
     {
         title: "Contact",
-        url: "/contact"
+        url: "/contact",
+        imageURL: "/images/meduso_bg.jpg"
     },
     {
         title: "Design",

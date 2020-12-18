@@ -21,11 +21,14 @@ export default function IndexNavigation({ background }) {
 
 
                         onMouseOver={("/" + section) === obj.url ? null : () => {
-                            let hoverImage = document.getElementById(obj.title + "Image");
-                            if (hoverImage) hoverImage.className = styles.footerImage;
+                            let hoverImage = document.getElementById("hoverImage");
+                            if (hoverImage) {
+                                hoverImage.className = styles.footerImage;
+                                hoverImage.src = obj.imageURL;
+                            }
                         }}
                         onMouseLeave={("/" + section) === obj.url ? null : () => {
-                            let hoverImage = document.getElementById(obj.title + "Image");
+                            let hoverImage = document.getElementById("hoverImage");
                             if (hoverImage) hoverImage.className = styles.footerImageHidden;
                         }}
                         target={obj.isExternal ? "_blank" : ""} rel={obj.isExternal ? "noopener noreferrer" : ""}
@@ -36,6 +39,7 @@ export default function IndexNavigation({ background }) {
             })}
         </div>
         <div className={styles.sectionBackground}>
+            {/* 
             <img id="WorkImage" className={section === 'work' ? styles.footerImage : styles.footerImageHidden}
 
                 src='/images/temp.png'
@@ -59,7 +63,9 @@ export default function IndexNavigation({ background }) {
 
 
                 src='/images/meduso_bg.jpg'
-            />
+            />*/}
+            <img id="hoverImage" className={styles.footerImageHidden} src={background ? background : '/images/temp.png'}></img>
+
             <img className={styles.backgroundImage} src={background ? background : '/images/temp.png'} style={{ zIndex: "-8" }}></img>
         </div>
     </>
