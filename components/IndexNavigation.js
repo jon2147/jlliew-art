@@ -20,17 +20,25 @@ export default function IndexNavigation({ background }) {
                     <a className={("/" + section) === obj.url ? styles.barLinkActive : obj.isExternal ? styles.barLinkExternal : styles.barLink}
 
 
-                        onMouseOver={("/" + section) === obj.url ? null : () => {
-                            let hoverImage = document.getElementById("hoverImage");
-                            if (hoverImage) {
-                                hoverImage.className = styles.footerImage;
-                                hoverImage.src = obj.imageURL;
-                            }
-                        }}
-                        onMouseLeave={("/" + section) === obj.url ? null : () => {
-                            let hoverImage = document.getElementById("hoverImage");
-                            if (hoverImage) hoverImage.className = styles.footerImageHidden;
-                        }}
+                        onMouseOver={
+                            obj.isExternal ? null :
+                                ("/" + section) === obj.url ? null : () => {
+                                    let hoverImage = document.getElementById("hoverImage");
+                                    if (hoverImage) {
+                                        hoverImage.className = styles.footerImage;
+                                        hoverImage.src = obj.imageURL;
+                                    }
+                                }
+                        }
+
+                        onMouseLeave={
+                            obj.isExternal ? null :
+                                ("/" + section) === obj.url ? null : () => {
+                                    let hoverImage = document.getElementById("hoverImage");
+                                    if (hoverImage) hoverImage.className = styles.footerImageHidden;
+                                }
+                        }
+
                         target={obj.isExternal ? "_blank" : ""} rel={obj.isExternal ? "noopener noreferrer" : ""}
                     >
                         {obj.title} {obj.isExternal ? <Launch className={styles.barLinkExternalIcon} /> : ""}

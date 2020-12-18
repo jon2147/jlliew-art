@@ -52,7 +52,7 @@
     position: fixed;
     z-index: -1;
     opacity: 1;
-    transition: visibility 0s, ease 0.38s, opacity 0.38s ease, z-index 0.1s;
+    transition: visibility 0s, ease 0.38s, opacity 0.28s ease, z-index 0s;
 }
 
 .backgroundImage {
@@ -62,14 +62,14 @@
     position: fixed;
     z-index: -1;
     opacity: 1;
-    transition: visibility 0s, ease 0.38s, opacity 0.38s ease;
+    transition: visibility 0s, ease 0.38s, opacity 0.28s ease;
 
 }
 
 .footerImageHidden {
     composes: footerImage;
     opacity: 0;
-    transition: visibility 0s, ease 0.3s, opacity 0.3s ease, z-index 6s;
+    transition: visibility 0s, ease 0.3s, opacity 0.18s ease, z-index 2s;
     z-index: -12;
 }
 
