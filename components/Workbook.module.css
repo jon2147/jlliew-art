@@ -1,0 +1,113 @@
+.tileDimensions {
+    /*1081–1440, tiles 72% */
+    --tile-width: 14.4vw;
+    --tile-min-width: 128px;
+    --tile-max-width: 480px;
+    --tile-padding: 8px;
+    /*–599, tiles 96% */
+    --tile-width-xxxs: 48vw;
+    --tile-padding-xxxs: 2vw;
+    /*600–738, tiles 70% */
+    --tile-width-xxs: 50vw;
+    --tile-padding-xxs: 6px;
+    /*739–780, tiles 75% */
+    --tile-width-xs: 18.75vw;
+    --tile-padding-xs: 6px;
+    /*781–1080, tiles 82% */
+    --tile-width-s: 16.4vw;
+    --tile-padding-s: 6px;
+    /*1440+, tiles 62% */
+    --tile-width-l: 12.4vw;
+    --tile-padding-l: 10px;
+}
+
+.workTiles {
+    width: 96%;
+    margin: auto;
+    margin-top: 15rem;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align-last: left;
+}
+
+.workTile {
+    composes: tileDimensions;
+    display: inline-flex;
+    min-width: var(--tile-min-width);
+    max-width: var(--tile-max-width);
+    min-height: var(--tile-min-width);
+    max-height: var(--tile-max-width);
+    width: var(--tile-width);
+    height: var(--tile-width);
+    padding: var(--tile-padding);
+}
+
+.tileImage {
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    filter: grayscale(100%) brightness(100%) contrast(100%);
+}
+
+.tileImage:hover {
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .workTiles {
+        width: 96%;
+        margin-top: 10rem;
+    }
+    .workTile {
+        width: var(--tile-width-xxxs);
+        height: var(--tile-width-xxxs);
+        padding: var(--tile-padding-xxxs);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .workTiles {
+        width: 70%;
+    }
+    .workTile {
+        width: var(--tile-width-xxs);
+        height: var(--tile-width-xxs);
+        padding: var(--tile-padding-xxs);
+    }
+}
+
+@media only screen and (min-width: 739px) {
+    .workTiles {
+        width: 75%;
+    }
+    .workTile {
+        width: var(--tile-width-xs);
+        height: var(--tile-width-xs);
+        padding: var(--tile-padding-xs);
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    .workTiles {
+        width: 82%;
+    }
+    .workTile {
+        width: var(--tile-width-s);
+        height: var(--tile-width-s);
+        padding: var(--tile-padding-s);
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .workTiles {
+        width: 62%;
+    }
+    .workTile {
+        width: var(--tile-width-l);
+        height: var(--tile-width-l);
+        padding: var(--tile-padding-l);
+    }
+}

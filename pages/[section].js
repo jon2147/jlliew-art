@@ -11,6 +11,7 @@ import ContentWithFooter from '../components/ContentWithFooter';
 
 import { sectionsData } from '../sections/sections'
 import IndexNavigation from '../components/IndexNavigation';
+import Workbook from '../components/Workbook';
 
 export async function getStaticPaths() {
 
@@ -35,7 +36,7 @@ export async function getStaticProps({ params }) {
     }
 }
 
-export default function Section({ section }) {   
+export default function Section({ section }) {
 
     return <>
 
@@ -43,7 +44,8 @@ export default function Section({ section }) {
             <title>{section.title + " - Jonathan Liew"}</title>
         </Head>
         <div className={styles.bufferedContentContainer}>
-            <IndexNavigation background={section.image}/>
+            <IndexNavigation background={section.image} /> {/* This would be the same for e.g. a personal project page, with background set to the project's */}
+            <Workbook />
         </div>
     </>
 }

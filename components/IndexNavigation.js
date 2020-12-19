@@ -22,13 +22,19 @@ export default function IndexNavigation({ background }) {
 
                         onMouseOver={
                             obj.isExternal ? null :
-                                ("/" + section) === obj.url ? null : () => {
-                                    let hoverImage = document.getElementById("hoverImage");
-                                    if (hoverImage) {
-                                        hoverImage.className = styles.footerImage;
-                                        hoverImage.src = obj.imageURL;
+                                ("/" + section) === obj.url ?
+                                    () => {
+                                        let hoverImage = document.getElementById("hoverImage");
+                                        if (hoverImage) hoverImage.className = styles.footerImageHidden
                                     }
-                                }
+                                    :
+                                    () => {
+                                        let hoverImage = document.getElementById("hoverImage");
+                                        if (hoverImage) {
+                                            hoverImage.className = styles.footerImage;
+                                            hoverImage.src = obj.imageURL;
+                                        }
+                                    }
                         }
 
                         onMouseLeave={
