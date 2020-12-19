@@ -5,10 +5,10 @@
     --tile-max-width: 480px;
     --tile-padding: 8px;
     /*–599, tiles 96% */
-    --tile-width-xxxs: 48vw;
+    --tile-width-xxxs: 47vw;
     --tile-padding-xxxs: 2vw;
     /*600–738, tiles 70% */
-    --tile-width-xxs: 50vw;
+    --tile-width-xxs: 23vw;
     --tile-padding-xxs: 6px;
     /*739–780, tiles 75% */
     --tile-width-xs: 18.75vw;
@@ -56,10 +56,23 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 319px) {
     .workTiles {
         width: 96%;
-        margin-top: 10rem;
+    }
+    .workTile {
+        width: 96vw;
+        height: 96vw;
+        min-width: 96vw;
+        min-height: 96vw;
+        padding: 2vw;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    .workTiles {
+        width: 96%;
     }
     .workTile {
         width: var(--tile-width-xxxs);
@@ -68,7 +81,7 @@
     }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
     .workTiles {
         width: 70%;
     }
