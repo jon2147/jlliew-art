@@ -1,0 +1,24 @@
+import styles from './WorkbookEntryNavigation.module.css'; // create a separate module for each component; avoid grouping if possible
+import Link from 'next/link'
+import ArrowBack from '@material-ui/icons/ArrowBack';
+import ArrowForward from '@material-ui/icons/ArrowForward';
+
+
+export default function WorkbookEntryNavigation() {
+    return (
+        <div className={styles.entryNavigation}>
+            <Link href={"/work"}>
+                <a className={styles.navigationLink}>
+                    <ArrowBack className={styles.navigationLinkIcon} />
+                    <span className={styles.navigationLinkText}>Previous Entry</span>
+                </a>
+            </Link>
+            <Link href={"/work"}>
+                <a className={styles.navigationLink}>
+                    <ArrowForward className={styles.navigationLinkIcon} />
+                    <span className={styles.navigationLinkText}>Next Entry</span>
+                </a>
+            </Link>
+        </div>
+    )
+}

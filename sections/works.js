@@ -2,14 +2,11 @@ import React from 'react'
 import Launch from '@material-ui/icons/Launch'
 
 
-export const workItems = [
-    {
+export const workItems = {
+    "unimelb-pursuit" : {
         projectTitle: "Pursuit: COVID-19 Vaccine Special Report",
         projectSubtitle: "University of Melbourne",
-        projectDescription: <div>
-            <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank" rel="noopener noreferrer">the search for a COVID-19 vaccine<Launch className="project-external-link-icon" /></a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – let's hope the remaining readership are just as thrilled with the science.</p>
-        </div>,
+        projectDescription: "<div><p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href=\"https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine\" target=\"_blank\" rel=\"noopener noreferrer\">the search for a COVID-19 vaccine<Launch className=\"externalLinkIcon\" /></a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p><p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – let's hope the remaining readership are just as thrilled with the science.</p></div>",
         pageDescription: "As the world fell into lockdown, the media team at Pursuit raced to prepare a report on the search for a COVID-19 vaccine. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.",
         projectThumbnail: "/images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectURL: "/unimelb-pursuit",
@@ -42,14 +39,10 @@ export const workItems = [
             }
         ]
     },
-    {
+    "unimelb": {
         projectTitle: "University of Melbourne",
         projectSubtitle: "Digital Designer",
-        projectDescription: <div>
-            <p><i>“The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them.”</i> – We printed that in a book.</p>
-            <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
-            <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
-        </div>,
+        projectDescription: "<div><p><i>“The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them.”</i> – We printed that in a book.</p><p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p><p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p></div>",
         pageDescription: "“The University of Melbourne's websites are our most globally visible asset, attracting 27.5 million visitors a year. The Digital and Online Channels (DOC) team is the team responsible for them.” – We printed that in a book.",
         projectThumbnail: "/images/thumbnails/unimelb_doc_thumb.jpg",
         projectURL: "/unimelb",
@@ -91,13 +84,7 @@ export const workItems = [
                 imageAlt: "Study Find a Course Filters UI Overhaul",
                 desktopContain: true,
                 mobileContain: true
-            }/*,
-            {
-                imageURL: "/images/unimelb/study_scp_semantic.jpg",
-                imageAlt: "Study Sample Course Plan Semantic Colourisation",
-                desktopContain: true,
-                mobileContain: true
-            }*/,
+            },
             {
                 imageURL: "/images/unimelb/unimelb_livewhale_events.jpg",
                 imageAlt: "LiveWhale Events Component Samples",
@@ -112,12 +99,10 @@ export const workItems = [
             }
         ]
     },
-    {
+    "wartide": {
         projectTitle: "Wartide CCG",
         projectSubtitle: "Lachlan Peterson",
-        projectDescription: <div>
-            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.</p>
-        </div>,
+        projectDescription: "<div><p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.</p></div>",
         pageDescription: "I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.",
         projectThumbnail: "/images/thumbnails/wartide_apstaff_thumb.jpg",
         projectURL: "/wartide",
@@ -143,14 +128,11 @@ export const workItems = [
             }
         ]
     },
-    {
+    "unimelb-pollen": {
         projectTitle: "Melbourne Pollen Forecast App",
         projectSubtitle: "University of Melbourne",
-        projectDescription: <div>
-            <p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p>
-            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank" rel="noopener noreferrer">here they are<Launch className="project-external-link-icon" /></a>) on modular, adaptable designs to guide the development of their new app.</p>
-        </div>,
-        pageDescription: "Melbourne Pollen lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.",
+        projectDescription: "<div><p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p><p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href=\"https://www.melbournepollen.com.au/who-are-we/meet-team/\" target=\"_blank\" rel=\"noopener noreferrer\">here they are<Launch className=\"externalLinkIcon\" /></a>) on modular, adaptable designs to guide the development of their new app.</p></div>",
+            pageDescription: "Melbourne Pollen lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.",
         projectThumbnail: "/images/thumbnails/pollen_grid_thumb.jpg",
         projectURL: "/unimelb-pollen",
         projectTags: ["Progressive Web App", "Interaction Design", "User Interaction", "Style Guide", "Pollen"],
@@ -175,12 +157,10 @@ export const workItems = [
             }
         ]
     },
-    {
+    "pictoria-bestfurn": {
         projectTitle: "Bestfurn Furniture & Bedding",
         projectSubtitle: "Pictoria Media",
-        projectDescription: <div>
-            <p>Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the <i>Bestfurn Furniture &amp; Bedding Group</i>, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.</p>
-        </div>,
+        projectDescription: "<div><p>Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the <i>Bestfurn Furniture &amp; Bedding Group</i>, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.</p></div>",
         pageDescription: "Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the Bestfurn Furniture & Bedding Group, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.",
         projectThumbnail: "/images/thumbnails/bestfurn_gilmore_thumb.jpg",
         projectURL: "/pictoria-bestfurn",
@@ -242,13 +222,10 @@ export const workItems = [
             }
         ]
     },
-    {
+    "pictoria-mlily": {
         projectTitle: "MLILY Australia",
         projectSubtitle: "Pictoria Media",
-        projectDescription: <div>
-            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
-            <p>I also worked on point of sale material (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
-        </div>,
+        projectDescription: "<div><p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p><p>I also worked on point of sale material (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p></div>",
         pageDescription: "One of Pictoria Media's frequent clients MLILY Australia, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.",
         projectThumbnail: "/images/thumbnails/mlily_vfx_thumb.jpg",
         projectURL: "/pictoria-mlily",
@@ -293,13 +270,10 @@ export const workItems = [
             }
         ]
     },
-    {
+    "enp": {
         projectTitle: "Evans & Partners",
         projectSubtitle: "Algo Trading Services",
-        projectDescription: <div>
-            <p>The stock-broking solutions firm (then transitioning from <i>Evans &amp; Peters</i>) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.</p>
-            <p>I prepared a series of visual guides, each containing applications of my new designs and notes on appropriate styling, visual indicators, and form flow– making interactions meaningful and clear, and all in keeping with the established brand identity of Evans &amp; Partners.</p>
-        </div>,
+        projectDescription: "<div><p>The stock-broking solutions firm (then transitioning from <i>Evans &amp; Peters</i>) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.</p><p>I prepared a series of visual guides, each containing applications of my new designs and notes on appropriate styling, visual indicators, and form flow– making interactions meaningful and clear, and all in keeping with the established brand identity of Evans &amp; Partners.</p></div>",
         pageDescription: "The stock-broking solutions firm (then transitioning from Evans & Peters) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.",
 
         projectThumbnail: "/images/thumbnails/enp_guide_thumb.jpg",
@@ -314,4 +288,4 @@ export const workItems = [
             }
         ]
     }
-]
+}

@@ -1,0 +1,108 @@
+.entryContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10vw;
+    height: 100vh;
+    width: 100%;
+}
+
+.didactic {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dbdbdb;
+    padding: 4rem;
+    text-align: center;
+    flex: 4.5;
+    order: -2;
+}
+
+.entryTitle {
+    color: #212121;
+    font-size: 2.375rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    order: -2;
+}
+
+.entrySubtitle {
+    color: #212121;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 1rem 0 1.5rem 0;
+    order: -3;
+}
+
+.entryDescription {
+    color: #212121;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    text-align: left;
+    max-width: 100%;
+    order: -1;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex: 3;
+    order: -1;
+}
+
+.carouselCell {
+    width: 100%;
+    height: 100%;
+}
+
+.cellContent {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cellContent.desktopContain {
+    object-fit: contain;
+}
+
+.externalLinkIcon {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+    .entryContainer {
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .didactic {
+        padding: 2rem;
+        order: -1;
+    }
+    .entryTitle {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+    }
+    .entrySubtitle {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+    .entryDescription {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .carousel {
+        height: 49vh;
+        max-height: 49vh;
+        order: -2;
+        padding: 0;
+    }
+}

@@ -34,6 +34,12 @@ a {
   box-sizing: border-box;
 }
 
+a {
+  color: #4C71B6;
+  text-decoration: none;
+  transition: color .15s;
+}
+
 
 /* WebKit (Chrome) */
 html::-webkit-scrollbar {  
@@ -43,5 +49,6 @@ html::-webkit-scrollbar {
 
 
 a:hover {
+  transition: color .15s;
   cursor: pointer;
 }

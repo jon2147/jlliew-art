@@ -6,10 +6,19 @@ import { workItems } from '../sections/works'
 
 export default function Workbook() {
 
+
+    let tileItems = [];
+    let workKeys = Object.keys(workItems);
+    
+    workKeys.forEach((key)=> {
+        tileItems.push(workItems[key]);
+    });
+
+
     return (
         <>
             <div className={styles.workTiles}>
-                {workItems.map((tile, index) => {
+                {tileItems.map((tile, index) => {
                     return <Link key={index + tile.projectTitle} href={"/work" + tile.projectURL}>
                      
                         <a className={styles.workTile} title={tile.projectTitle}>

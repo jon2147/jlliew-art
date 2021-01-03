@@ -1,0 +1,33 @@
+.entryNavigation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.navigationLink {
+    color: #A08A5D;
+    margin-bottom: 0.75rem;
+}
+
+.navigationLink:last-child {
+    margin-bottom: 0;
+}
+
+.navigationLinkIcon {
+    margin: 0 1rem -.5rem 0;
+}
+
+.navigationLinkText {
+    color: #212121;
+    transition: color .15s;
+    font-size: 0.625rem;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigationLinkText:hover {
+    color: #A08A5D;
+    transition: color .15s;
+}
