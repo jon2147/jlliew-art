@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .navigationLink {
     color: #A08A5D;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .navigationLink:last-child {
@@ -15,7 +17,7 @@
 }
 
 .navigationLinkIcon {
-    margin: 0 1rem -.5rem 0;
+    margin: 0 1rem 0 0;
 }
 
 .navigationLinkText {
@@ -25,9 +27,16 @@
     letter-spacing: 0.30em;
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 1.25rem;
 }
 
 .navigationLinkText:hover {
     color: #A08A5D;
     transition: color .15s;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+    .navigationLink {
+        margin-bottom: 1.25rem;
+    }
 }
