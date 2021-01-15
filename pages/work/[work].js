@@ -20,8 +20,6 @@ export async function getStaticPaths() {
         }
     })
 
-    console.log(paths)
-
     return {
         paths, fallback: false
     }
@@ -41,8 +39,6 @@ export async function getStaticProps({ params }) {
 
     let nextWork = workItems[workKeys[nextIndex]];
     let previousWork = workItems[workKeys[previousIndex]];
-
-    console.log(workKeys)
 
     return {
         props: { work, nextWork, previousWork }
@@ -67,8 +63,11 @@ export default function Work({ work, nextWork, previousWork }) {
         <div className={styles.entryContainer}>
             <div className={styles.carousel}>
                 <div className={styles.carouselCell}>
-                    <img className={styles.cellContent}
+                    <div>
+                         <img className={styles.cellContent}
                         src={work.projectImages[0].imageURL} alt={work.imageAlt} />
+                    </div>
+                   
                 </div>
                 <CarouselNavigation/>
             </div>

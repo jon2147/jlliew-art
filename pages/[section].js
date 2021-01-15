@@ -45,7 +45,8 @@ export default function Section({ section }) {
         </Head>
         <div className={styles.bufferedContentContainer}>
             <IndexNavigation background={section.image} /> {/* This would be the same for e.g. a personal project page, with background set to the project's */}
-            <Workbook />
+            {section.id === "work"  ? <Workbook /> : <></>}
+            
         </div>
     </>
 }

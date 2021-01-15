@@ -1,13 +1,13 @@
 .entryContainer {
     display: flex;
     flex-direction: row;
-    padding: 4vw 10vw 10vw 10vw;
-    height: 100vh;
+    padding: 4% 10% 10% 10%;
+    height: 100%;
     width: 100%;
 }
 
 .didactic {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #dbdbdb;
@@ -31,7 +31,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    margin: 1rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
     order: -3;
 }
 
@@ -42,28 +42,44 @@
     text-align: left;
     max-width: 100%;
     order: -1;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+/* WebKit (Chrome) */
+
+.entryDescription::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .carousel {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 3;
     order: -1;
 }
 
 .carouselCell {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    margin-bottom: -3.25rem;
+    max-width: 100%;
+    max-height: 600px;
+    min-height: 600px;
+    background: crimson;
+    display: flex;
+    flex: 1;
 }
 
 .cellContent {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -103,10 +119,11 @@
         text-align: center;
     }
     .carousel {
-        height: 66vh;
-        min-height: 66vh;
-        max-height: 66vh;
         order: -2;
         padding: 0;
+    }
+    .carouselCell{        
+        min-height: 54vh;
+        max-height: 54vh;
     }
 }

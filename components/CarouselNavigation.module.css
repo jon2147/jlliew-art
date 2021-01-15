@@ -3,7 +3,6 @@
     height: 3.25rem;
     margin-top: 1rem;
     background-color: rgba(219, 219, 219, 0.2);
-    flex: 1;
 }
 
 @media only screen and (max-width: 900px) {
