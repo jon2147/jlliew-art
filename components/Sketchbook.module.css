@@ -1,0 +1,67 @@
+.sketchbookContainer {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbs {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align-last: left;
+    padding: 1rem;
+}
+
+.thumb {
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+}
+
+.thumbImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .2s ease;
+    filter: grayscale(100%) brightness(100%) contrast(100%);
+}
+
+.thumbImage:hover {
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+}
+
+.sketchContainer {
+    height: 54vh;
+    padding: 1rem;
+}
+
+.sketchImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.didactic {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #dbdbdb;
+    padding: 2rem;
+    text-align: center;
+}
+
+.sketchTitle {
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.sketchDescription {
+    color: #212121;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}

@@ -12,6 +12,7 @@ import ContentWithFooter from '../components/ContentWithFooter';
 import { sectionsData } from '../sections/sections'
 import IndexNavigation from '../components/IndexNavigation';
 import Workbook from '../components/Workbook';
+import Sketchbook from '../components/Sketchbook';
 
 export async function getStaticPaths() {
 
@@ -46,6 +47,7 @@ export default function Section({ section }) {
         <div className={styles.bufferedContentContainer}>
             <IndexNavigation background={section.image} /> {/* This would be the same for e.g. a personal project page, with background set to the project's */}
             {section.id === "work"  ? <Workbook /> : <></>}
+            {section.id === "sketchbook"  ? <Sketchbook /> : <></>}
             
         </div>
     </>
